@@ -1,0 +1,100 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@tailwind screens;
+
+body{
+  -webkit-print-color-adjust:exact !important;
+  print-color-adjust:exact !important;
+}
+    
+ 
+.key {
+  position: relative;
+  border: 1px solid black;
+  display: block;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.key:not(.sharp) {
+  float: left;
+  width: 7%;
+  height: 100%;
+  background: rgba(255, 255, 255, .8);    
+  
+}
+
+.key.sharp {
+  position: absolute;
+  width: 6%;
+  height: 60%;
+  background: #000;
+  color: #eee;
+  top: 0;
+  z-index: 3;
+}
+
+.key[data-key="C#1"] {
+  left: 4%;
+}
+
+.key[data-key="D#3"] {
+  left: 11%;
+}
+
+.key[data-key="F#6"]  {
+  left: 24.5%;
+}
+
+.key[data-key="G#8"] {
+  left: 32.5%;
+}
+
+.key[data-key="A#10"] {
+  left: 39.5%;    
+}
+
+.key[data-key="C#13"] {
+  left: 53%;    
+}
+
+.key[data-key="D#15"] {
+  left: 60%;    
+}
+
+.key[data-key="F#18"] {
+  left: 73.5%;    
+}
+
+.key[data-key="G#20"] {
+  left: 80.5%;    
+}
+
+.key[data-key="A#22"] {
+  left: 88%;    
+}
+
+.keys {
+  display: block;
+  width: 100%;
+  height: 60px;
+  position: relative;
+}
+.dot.active {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: black;
+  border-radius: 1000px;
+  bottom: 0;
+  margin-bottom: 0.2rem;
+  position: absolute;
+}
+.sharp > .dot.active {
+  background: white;
+}
