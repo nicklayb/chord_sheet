@@ -1,4 +1,6 @@
-# Music Sheet
+# Chord Sheet
+
+[Demo here](https://nicklayb.github.io/chord_sheet)
 
 1. Make sure `create-elm-app` is installed
     - `npm i -g create-elm-app`
