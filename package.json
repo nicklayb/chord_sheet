@@ -8,7 +8,9 @@
   },
   "scripts": {
     "dev": "elm-app start",
-    "css:watch": "npx tailwind -w -i src/input.css -o src/main.css"
+    "css:watch": "npx tailwind -w -i src/input.css -o src/main.css",
+    "css:build": "npx tailwind -i src/input.css -o src/main.css",
+    "build": "npm run css:build && elm-app build"
   },
   "author": "",
   "license": "ISC",
